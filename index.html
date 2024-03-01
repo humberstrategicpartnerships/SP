@@ -963,10 +963,11 @@
 
                 var E30 = 0.6
                 var M30 = 1 - E30
-                var sf = (E30 * total_attributed_score) + (M30 * total_attributed_score_s)
+                var sf = ((E30 * total_attributed_score) + (M30 * total_attributed_score_s))*100
+                var roundedResult = Math.round(sf);
                 console.log('Likelihood Strategic Fit', sf);
 
-                $('#score').text('Strategic Partnership Score: ' + sf);
+                $('#score').text('Strategic Partnership Score: ' + sf + '%');
 
             });
         });
