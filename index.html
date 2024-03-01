@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #000033;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .box {
+            width: 45%;
+            padding: 20px;
+            margin: 10px;
+            background-color: #ddd;
+            /* Box color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+        #score {
+            padding: 1%;
+        }
+    </style>
+    <title>Strategic Partnerships</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Strategic Partnerships with Humber</h1>
+        <p><i>
+                The Strategic Partnership Model operates through a detailed analysis on two fronts: the Demand Side and
+                the Supply Side. On the Demand Side, it assesses Value Creation for both students and faculties, Revenue
+                Diversification, and Systems Leadership, using a mix of Subjective Evaluative Judgments (SEJs) and
+                objective data to understand a partner's potential contributions. The Supply Side focuses on the
+                partner's characteristics such as financial health, academic relationships, and industry relevance,
+                ensuring these attributes align with the institution's strategic goals. This dual approach ensures a
+                comprehensive evaluation of potential partnerships. Please fill in as many fields as you can to the best
+                of your knowledge. This will help us calculate the likelihood of a strategic fit.
+            </i></p>
+    </header>
+
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>Demand Side</h2>
+            <label for="selected_value" class="dark-label"><b>Enable learning by sharing insights through Townhall
+                    events, site visits, etc.</b></label>
+            <select id="selected_value1" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Offering scholarships and bursaries</b></label>
+            <select id="selected_value2" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Number of yearly WIL opportunities</b></label>
+            <select id="selected_value3" class="dark-dropdown">
+                <option value="&lt; 5">&lt; 5</option>
+                <option value="5 &lt; x &lt; 10">5 &lt; x &lt; 10</option>
+                <option value="&gt; 10">&gt; 10</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Interest in building graduate hiring
+                    pipeline</b></label>
+            <select id="selected_value4" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Sponsoring students for competitions, hackathons,
+                    etc.</b></label>
+            <select id="selected_value5" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Opportunity for interdisciplinary collaboration across
+                    Humber</b></label>
+            <select id="selected_value6" class="dark-dropdown">
+                <option value="Extensive">Extensive</option>
+                <option value="Not identified">Not identified</option>
+                <option value="Limited">Limited</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Opportunity for capstone, research and innovation
+                    projects</b></label>
+            <select id="selected_value7" class="dark-dropdown">
+                <option value="Extensive">Extensive</option>
+                <option value="Not identified">Not identified</option>
+                <option value="Limited">Limited</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Donations in kind (equipment, licences, access to labs
+                    and/or R&D ressources, learning material)</b></label>
+            <select id="selected_value8" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Knowledge dissemination through Townhall events,
+                    participation in PACs, conferences</b></label>
+            <select id="selected_value9" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Co-creation of micro-credentials and CPL
+                    programs</b></label>
+            <select id="selected_value10" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Events, lease of premises for commercial
+                    purposes</b></label>
+            <select id="selected_value11" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Donations, general sponsorships</b></label>
+            <select id="selected_value12" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Employee tuition assistance programs</b></label>
+            <select id="selected_value13" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Candidate for InnoSurvey 360</b></label>
+            <select id="selected_value14" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Opportunity to develop coalitions and public interest
+                    advocacy</b></label>
+            <select id="selected_value15" class="dark-dropdown">
+                <option value="Extensive">Extensive</option>
+                <option value="Not identified">Not identified</option>
+                <option value="Limited">Limited</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Existing alliances of diverse stakeholders around a
+                    shared
+                    purpose</b></label>
+            <select id="selected_value16" class="dark-dropdown">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+        </div>
+        <div class="box" id="box2">
+            <h2>Supply Side</h2>
+            <label for="selected_value" class="dark-label"><b>Existing relationships with Humber</b></label>
+            <select id="selected_value17" class="dark-dropdown">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Existing academic partnerships</b></label>
+            <select id="selected_value18" class="dark-dropdown">
+                <option value="Only Universities">Only Universities</option>
+                <option value="Only Colleges">Only Colleges</option>
+                <option value="Incubators">Incubators</option>
+                <option value="None">None</option>
+                <option value="Various post-secondary">Various post-secondary</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>% of revenues spent on R&D</b></label>
+            <select id="selected_value19" class="dark-dropdown">
+                <option value="Not known">Not known</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="&lt; 5%">&lt; 5%</option>
+                <option value="5% &lt; x &lt; 15%">5% &lt; x &lt; 15%</option>
+                <option value="&gt; 15%">&gt; 15%</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Maturity stage</b></label>
+            <select id="selected_value20" class="dark-dropdown">
+                <option value="Start-up">Start-up</option>
+                <option value="Growing">Growing</option>
+                <option value="Expanding">Expanding</option>
+                <option value="Transforming">Transforming</option>
+                <option value="Mature">Mature</option>
+                <option value="Public company">Public company</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Last 3-years Financial health check</b></label>
+            <select id="selected_value21" class="dark-dropdown">
+                <option value="Growing profits">Growing profits</option>
+                <option value="Stable profitability">Stable profitability</option>
+                <option value="Declining profits">Declining profits</option>
+                <option value="Structural losses">Structural losses</option>
+                <option value="Conjuctural losses">Conjuctural losses</option>
+                <option value="Losses on scaling">Losses on scaling</option>
+                <option value="Non-Profits">Non-Profits</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Nr. of hirings / year</b></label>
+            <select id="selected_value22" class="dark-dropdown">
+                <option value="1 &lt; x &lt; 20">1 &lt; x &lt; 20</option>
+                <option value="'20 &lt; x &lt; 100">20 &lt; x &lt; 100</option>
+                <option value="&gt; 100"> &gt; 100</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Rate of growth (% of new hirings)</b></label>
+            <select id="selected_value23" class="dark-dropdown">
+                <option value="&lt; 5%">&lt; 5%</option>
+                <option value="5% &lt; x &lt; 20%">5% &lt; x &lt; 20%</option>
+                <option value="20% &lt; x &lt; 100%">20% &lt; x &lt; 100%</option>
+                <option value="&gt; 100%">&gt; 100%</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Geographic presence</b></label>
+            <select id="selected_value24" class="dark-dropdown">
+                'Ontario only', 'Canada', 'Canada & US', 'International', 'Global')
+                <option value="Ontario only">Ontario only</option>
+                <option value="Canada">Canada</option>
+                <option value="Canada & US">Canada & US</option>
+                <option value="International">International</option>
+                <option value="Global">Global</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Potential Industrial Technology Benefits (ITB)
+                    candidate</b></label>
+            <select id="selected_value25" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="In consideration">In consideration</option>
+                <option value="Not applicable">Not applicable</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Number of Humber Graduates</b></label>
+            <select id="selected_value26" class="dark-dropdown">
+                <option value="&lt; 5">&lt; 5</option>
+                <option value="5 &lt; x &lt; 10">5 &lt; x &lt; 10</option>
+                <option value="None">None</option>
+                <option value="Not Known">Not Known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Geographic proximity to Humber</b></label>
+            <select id="selected_value27" class="dark-dropdown">
+                <option value="&lt; 3 Km">&lt;3 Km</option>
+                <option value="3 &lt; x &lt; 10 Km">3 &lt; x &lt; 10 Km</option>
+                <option value="&gt; 10 Km (GTA)">&gt; 10 Km (GTA)</option>
+                <option value="&gt; 50 Km (Ontario)">&gt; 50 Km (Ontario)</option>
+                <option value="No physical presence">No physical presence</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Relevancy to Humber</b></label>
+            <select id="selected_value28" class="dark-dropdown">
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="Future potential">Future potential</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Hiring outlook</b></label>
+            <select id="selected_value29" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Not known">Not known</option>
+            </select>
+            <br><br>
+            <label for="selected_value" class="dark-label"><b>Industry reputation</b></label>
+            <select id="selected_value30" class="dark-dropdown">
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Not known">Not known</option>
+            </select>
+
+
+            <br><br>
+
+
+        </div>
+        <button id="calculateBtn" class="fas fa-calculator">
+            <p>Calculate</p>
+        </button>
+        <h2 id="score"></h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#calculateBtn').on('click', function () {
+                var selectedValues = [];
+                for (var i = 1; i <= 31; i++) {
+                    selectedValues.push($('#selected_value' + i).val());
+                }
+
+                var [DA1A, DA1B, DA1C, DA1D, DA1E, DA2A, DA2B, DA2C, DA2D, DA2E, DB2A, DB2B, DB2C, DB2D, DC1, DC2, SA1, SA2, SA3, SA4, SA5, SA6, SA7, SA8, SA9, SA10, SA11, SB1, SB2, SB3] = selectedValues;
+                
+                // Value creation for students
+                var DA1Ac = 0.08;
+                var DA1Bc = 0.08;
+                var DA1Cc = 0.07;
+                var DA1Dc = 0.07;
+                var DA1Ec = 0.05;
+                var value_creation_for_students = [DA1Ac, DA1Bc, DA1Cc, DA1Dc, DA1Ec].reduce((acc, val) => acc + val, 0);
+
+                // Value creation for faculties and COIs
+                var DA2Ac = 0.08;
+                var DA2Bc = 0.08;
+                var DA2Cc = 0.08;
+                var DA2Dc = 0.05;
+                var DA2Ec = 0.05;
+                var value_creation_faculties_cois = [DA2Ac, DA2Bc, DA2Cc, DA2Dc, DA2Ec].reduce((acc, val) => acc + val, 0);
+
+                var value_creation = value_creation_faculties_cois + value_creation_for_students;
+
+                // Diversify revenue
+                var DB1c = 0.08;
+                var DB2c = 0.08;
+                var DB3c = 0.06;
+                var DB4c = 0.04;
+                var diversify_revenue = [DB1c, DB2c, DB3c, DB4c].reduce((acc, val) => acc + val, 0);
+
+                // Systems Leadership
+                var DC1c = 0.03;
+                var DC2c = 0.02;
+
+                // Supply side 
+
+                var SA1c = 0.2;
+                var SA2c = 0.15;
+                var SA3c = 0.10;
+                var SA4c = 0.05;
+                var SA5c = 0.05;
+                var SA6c = 0.05;
+                var SA7c = 0.05;
+                var SA8c = 0.05;
+                var SA9c = 0.05;
+                var SA10c = 0.05;
+                var SA11c = 0.05;
+                var SB1c = 0.1;
+                var SB2c = 0.03;
+                var SB3c = 0.02;
+
+                var systems_leadership = [DC1c, DC2c].reduce((acc, val) => acc + val, 0);
+
+                var total = [
+                    value_creation_for_students,
+                    value_creation_faculties_cois,
+                    diversify_revenue,
+                    systems_leadership
+                ].reduce((acc, val) => acc + val, 0);
+
+                var values = {};
+                var DA1Ai = 0;
+                var DA1Bi = 0;
+                var DA1Ci = 0;
+                var DA1Di = 0;
+                var DA1Ei = 0;
+
+                // DA1A
+                if (DA1A === 'Positive') {
+                    DA1Ai = 1.0;
+                } else if (DA1A === 'Negative') {
+                    DA1Ai = 0.0;
+                } else if (DA1A === 'In consideration') {
+                    DA1Ai = 0.75;
+                } else if (DA1A === 'Not applicable') {
+                    DA1Ai = 0.0;
+                } else if (DA1A === 'Not known') {
+                    DA1Ai = 0.25;
+                }
+
+                // DA1B
+                if (DA1B === 'Positive') {
+                    DA1Bi = 1.0;
+                } else if (DA1B === 'Negative') {
+                    DA1Bi = 0.0;
+                } else if (DA1B === 'In consideration') {
+                    DA1Bi = 0.75;
+                } else if (DA1B === 'Not applicable') {
+                    DA1Bi = 0.0;
+                } else if (DA1B === 'Not known') {
+                    DA1Bi = 0.25;
+                }
+
+                // DA1C
+                if (DA1C === '< 5') {
+                    DA1Ci = 0.5;
+                } else if (DA1C === '5 < x < 10') {
+                    DA1Ci = 0.75;
+                } else if (DA1C === '> 10') {
+                    DA1Ci = 1.0;
+                } else if (DA1C === 'None') {
+                    DA1Ci = 0.0;
+                }
+
+                // DA1D
+                if (DA1D === 'Positive') {
+                    DA1Di = 1.0;
+                } else if (DA1D === 'Negative') {
+                    DA1Di = 0.0;
+                } else if (DA1D === 'In consideration') {
+                    DA1Di = 0.50;
+                } else if (DA1D === 'Not applicable') {
+                    DA1Di = 0.0;
+                } else if (DA1D === 'Not known') {
+                    DA1Di = 0.25;
+                }
+
+                // DA1E
+                if (DA1E === 'Positive') {
+                    DA1Ei = 1.0;
+                } else if (DA1E === 'Negative') {
+                    DA1Ei = 0.0;
+                } else if (DA1E === 'In consideration') {
+                    DA1Ei = 0.50;
+                } else if (DA1E === 'Not applicable') {
+                    DA1Ei = 0.0;
+                } else if (DA1E === 'Not known') {
+                    DA1Ei = 0.25;
+                }
+
+
+                // Initialize the variables
+                var DA2Ai = 0;
+                var DA2Bi = 0;
+                var DA2Ci = 0;
+                var DA2Di = 0;
+                var DA2Ei = 0;
+
+                // DA2A
+                if (DA2A === 'Extensive') {
+                    DA2Ai = 1.0;
+                } else if (DA2A === 'Not identified') {
+                    DA2Ai = 0.25;
+                } else if (DA2A === 'Limited') {
+                    DA2Ai = 0.5;
+                } else if (DA2A === 'None') {
+                    DA2Ai = 0.0;
+                }
+
+                // DA2B
+                if (DA2B === 'Extensive') {
+                    DA2Bi = 1.0;
+                } else if (DA2B === 'Not identified') {
+                    DA2Bi = 0.25;
+                } else if (DA2B === 'Limited') {
+                    DA2Bi = 0.5;
+                } else if (DA2B === 'None') {
+                    DA2Bi = 0.0;
+                }
+
+                // DA2C
+                if (DA2C === 'Positive') {
+                    DA2Ci = 1.0;
+                } else if (DA2C === 'Negative') {
+                    DA2Ci = 0.0;
+                } else if (DA2C === 'Not known') {
+                    DA2Ci = 0.25;
+                } else if (DA2C === 'Not applicable') {
+                    DA2Ci = 0.0;
+                } else if (DA2C === 'In consideration') {
+                    DA2Ci = 0.75;
+                }
+
+                // DA2D
+                if (DA2D === 'Positive') {
+                    DA2Di = 1.0;
+                } else if (DA2D === 'Negative') {
+                    DA2Di = 0.0;
+                } else if (DA2D === 'Not known') {
+                    DA2Di = 0.25;
+                } else if (DA2D === 'Not applicable') {
+                    DA2Di = 0.0;
+                } else if (DA2D === 'In consideration') {
+                    DA2Di = 0.75;
+                }
+
+                // DA2E
+                if (DA2E === 'Positive') {
+                    DA2Ei = 1.0;
+                } else if (DA2E === 'Negative') {
+                    DA2Ei = 0.0;
+                } else if (DA2E === 'Not known') {
+                    DA2Ei = 0.25;
+                } else if (DA2E === 'Not applicable') {
+                    DA2Ei = 0.0;
+                } else if (DA2E === 'In consideration') {
+                    DA2Ei = 0.75;
+                }
+
+                // Assign values to the 'values' object
+
+                var DB2Ai = 0;
+                var DB2Bi = 0;
+                var DB2Ci = 0;
+                var DB2Di = 0;
+
+                // DB2A
+                if (DB2A === 'Positive') {
+                    DB2Ai = 1.0;
+                }
+                if (DB2A === 'Negative') {
+                    DB2Ai = 0.0;
+                }
+                if (DB2A === 'Not known') {
+                    DB2Ai = 0.25;
+                }
+                if (DB2A === 'Not applicable') {
+                    DB2Ai = 0.0;
+                }
+                if (DB2A === 'In consideration') {
+                    DB2Ai = 0.75;
+                }
+
+                // DB2B
+                if (DB2B === 'Positive') {
+                    DB2Bi = 1.0;
+                }
+                if (DB2B === 'Negative') {
+                    DB2Bi = 0.0;
+                }
+                if (DB2B === 'Not known') {
+                    DB2Bi = 0.25;
+                }
+                if (DB2B === 'Not applicable') {
+                    DB2Bi = 0.0;
+                }
+                if (DB2B === 'In consideration') {
+                    DB2Bi = 0.75;
+                }
+
+                // DB2C
+                if (DB2C === 'Positive') {
+                    DB2Ci = 1.0;
+                }
+                if (DB2C === 'Negative') {
+                    DB2Ci = 0.0;
+                }
+                if (DB2C === 'Not known') {
+                    DB2Ci = 0.25;
+                }
+                if (DB2C === 'Not applicable') {
+                    DB2Ci = 0.0;
+                }
+                if (DB2C === 'In consideration') {
+                    DB2Ci = 0.75;
+                }
+
+                // DB2D
+                if (DB2D === 'Positive') {
+                    DB2Di = 1.0;
+                }
+                if (DB2D === 'Negative') {
+                    DB2Di = 0.0;
+                }
+                if (DB2D === 'Not known') {
+                    DB2Di = 0.25;
+                }
+                if (DB2D === 'Not applicable') {
+                    DB2Di = 0.0;
+                }
+                if (DB2D === 'In consideration') {
+                    DB2Di = 0.75;
+                }
+
+                // Assign values to the 'values' object
+                
+                var DC1i = 0;
+                var DC2i = 0;
+
+                // DC1
+                if (DC1 === 'Extensive') {
+                    DC1i = 1.0;
+                }if (DC1 === 'Not identified') {
+                    DC1i = 0.25;
+                }if (DC1 === 'Limited') {
+                    DC1i = 0.5;
+                }if (DC1 === 'None') {
+                    DC1i = 0.0;
+                }
+                
+                // DC2
+                if (DC2 === 'Yes') {
+                    DC2i = 1.0;
+                }if (DC2 === 'No') {
+                    DC2i = 0.0;
+                }if (DC2 === 'Not known') {
+                    DC2i = 0.25;
+                }
+
+                // Assign values to the 'values' object
+
+                var SA1i = 0;
+                var SA2i = 0;
+                var SA3i = 0;
+                var SA4i = 0;
+                var SA5i = 0; 
+                var SA6i = 0; 
+                var SA7i = 0; 
+                var SA8i = 0; 
+                var SA9i = 0; 
+                var SA10i = 0; 
+                var SA11i = 0; 
+                var SB1i = 0;
+                var SB2i = 0;
+                var SB3i = 0;
+
+                // Check SA1
+                if (SA1 === 'Yes') {
+                    SA1i = 1.0;
+                } if (SA1 === 'No') {
+                    SA1i = 0.75;
+                } if (SA1 === 'Inactive') {
+                    SA1i = 0.5;
+                }
+
+                // Check SA2
+                if (SA2 === 'Only Universities') {
+                    SA2i = 0.75;
+                } if (SA2 === 'Only Colleges') {
+                    SA2i = 1.0;
+                } if (SA2 === 'Incubators') {
+                    SA2i = 0.5;
+                } if (SA2 === 'None') {
+                    SA2i = 0.25;
+                } if (SA2 === 'Various post-secondary') {
+                    SA2i = 1.0;
+                }
+
+                // Check SA3
+                if (SA3 === 'Not known' || SA3 === 'Not applicable') {
+                    SA3i = 0.25;
+                } if (SA3 === '< 5%') {
+                    SA3i = 0.5;
+                } if (SA3 === '5% < x < 15%') {
+                    SA3i = 0.75;
+                } if (SA3 === '> 15%') {
+                    SA3i = 1.0;
+                }
+
+                // Check SA4
+                if (SA4 === 'Start-up') {
+                    SA4i = 0.25;
+                } if (SA4 === 'Growing') {
+                    SA4i = 0.5;
+                } if (SA4 === 'Expanding' || SA4 === 'Transforming' || SA4 === 'Mature') {
+                    SA4i = 1.0;
+                } if (SA4 === 'Public company') {
+                    SA4i = 0.25;
+                }
+
+
+                // Check SA5
+                if (SA5 === 'Growing profits') {
+                    SA5i = 1.0;
+                } if (SA5 === 'Stable profitability') {
+                    SA5i = 0.75;
+                } if (SA5 === 'Declining profits' || SA5 === 'Conjuctural losses') {
+                    SA5i = 0.5;
+                } if (SA5 === 'Structural losses') {
+                    SA5i = 0.0;
+                } if (SA5 === 'Losses on scaling' || SA5 === 'Non-Profits') {
+                    SA5i = 0.75;
+                }
+
+                // Check SA6
+                if (SA6 === '1 < x < 20') {
+                    SA6i = 0.5;
+                } if (SA6 === '20 < x < 100') {
+                    SA6i = 0.75;
+                } if (SA6 === '> 100') {
+                    SA6i = 1.0;
+                } if (SA6 === 'None') {
+                    SA6i = 0.0;
+                }
+
+                // Check SA7
+                if (SA7 === '< 5%') {
+                    SA7i = 0.25;
+                } if (SA7 === '5% < x < 20%') {
+                    SA7i = 0.5;
+                } if (SA7 === '20% < x < 100%' || SA7 === '> 100%') {
+                    SA7i = 0.75;
+                }
+
+                // Check SA8
+                if (SA8 === 'Ontario only') {
+                    SA8i = 0.5;
+                } if (SA8 === 'Canada' || SA8 === 'Canada & US' || SA8 === 'International' || SA8 === 'Global') {
+                    SA8i = 1.0;
+                }
+
+                // Check SA9
+                if (SA9 === 'Positive' || SA9 === 'Negative' || SA9 === 'In consideration') {
+                    SA9i = 1.0;
+                } if (SA9 === 'Not known') {
+                    SA9i = 0.25;
+                } if (SA9 === 'Not applicable') {
+                    SA9i = 0.0;
+                }
+            
+                // Check SA10
+                if (SA10 === '< 5') {
+                    SA10i = 0.5;
+                } if (SA10 === '5 < x < 10') {
+                    SA10i = 0.75;
+                } if (SA10 === '> 10' || SA10 === 'Not Known') {
+                    SA10i = 1.0;
+                } if (SA10 === 'None') {
+                    SA10i = 0.25;
+                }
+
+                // Check SA11
+                if (SA11 === '>3 Km') {
+                    SA11i = 1.0;
+                } if (SA11 === '3 < x < 10 Km') {
+                    SA11i = 0.75;
+                } if (SA11 === '> 10 Km (GTA)') {
+                    SA11i = 0.5;
+                } if (SA11 === '> 50 Km (Ontario)') {
+                    SA11i = 0.25;
+                } if (SA11 === 'No physical presence') {
+                    SA11i = 0.0;
+                }
+
+                // Check SB1
+                if (SB1 === 'High') {
+                    SB1i = 1.0;
+                } if (SB1 === 'Low') {
+                    SB1i = 0.5;
+                } if (SB1 === 'Future potential') {
+                    SB1i = 0.25;
+                } if (SB1 === 'None') {
+                    SB1i = 0.0;
+                }
+
+                // Check SB2
+                if (SB2 === 'Positive') {
+                    SB2i = 1.0;
+                } if (SB2 === 'Negative') {
+                    SB2i = 0.0;
+                } if (SB2 === 'Neutral') {
+                    SB2i = 0.75;
+                } if (SB2 === 'Not known') {
+                    SB2i = 0.25;
+                }
+
+                // Check SB3
+                if (SB3 === 'Positive') {
+                    SB3i = 1.0;
+                } if (SB3 === 'Negative') {
+                    SB3i = 0.0;
+                } if (SB3 === 'Neutral') {
+                    SB3i = 0.75;
+                } if (SB3 === 'Not known') {
+                    SB3i = 0.25;
+                }
+                values['DA1A'] = DA1Ai;
+                values['DA1B'] = DA1Bi;
+                values['DA1C'] = DA1Ci;
+                values['DA1D'] = DA1Di;
+                values['DA1E'] = DA1Ei;
+
+                values['DA2A'] = DA2Ai;
+                values['DA2B'] = DA2Bi;
+                values['DA2C'] = DA2Ci;
+                values['DA2D'] = DA2Di;
+                values['DA2E'] = DA2Ei;
+
+                values['DB2A'] = DB2Ai;
+                values['DB2B'] = DB2Bi;
+                values['DB2C'] = DB2Ci;
+                values['DB2D'] = DB2Di;
+
+                values['DC1'] = DC1i;
+                values['DC2'] = DC2i;
+
+                values['SA1'] = SA1i;
+                values['SA2'] = SA2i;
+                values['SA3'] = SA3i;
+                values['SA4'] = SA4i;
+                values['SA5'] = SA5i; 
+                values['SA6'] = SA6i; 
+                values['SA7'] = SA7i; 
+                values['SA8'] = SA8i; 
+                values['SA9'] = SA9i; 
+                values['SA10'] = SA10i; 
+                values['SA11'] = SA11i; 
+                values['SB1'] = SB1i;
+                values['SB2'] = SB2i;
+                values['SB3'] = SB3i;
+
+
+                // Initialize attributed scores objects
+                var attributed_scores = {};
+                var attributed_scores_value_creation_students = {};
+                var attributed_scores_value_creation_faculties_cois = {};
+                var attributed_scores_diversify_revenue = {};
+                var attributed_scores_systems_leadership = {};
+
+                // Fill attributed_scores_value_creation_students
+                attributed_scores_value_creation_students['AS_DA1A'] = values['DA1A'] * DA1Ac;
+                attributed_scores_value_creation_students['AS_DA1B'] = values['DA1B'] * DA1Bc;
+                attributed_scores_value_creation_students['AS_DA1C'] = values['DA1C'] * DA1Cc;
+                attributed_scores_value_creation_students['AS_DA1D'] = values['DA1D'] * DA1Dc;
+                attributed_scores_value_creation_students['AS_DA1E'] = values['DA1E'] * DA1Ec;
+
+                // Fill attributed_scores_value_creation_faculties_cois
+                attributed_scores_value_creation_faculties_cois['AS_DA2A'] = values['DA2A'] * DA2Ac;
+                attributed_scores_value_creation_faculties_cois['AS_DA2B'] = values['DA2B'] * DA2Bc;
+                attributed_scores_value_creation_faculties_cois['AS_DA2C'] = values['DA2C'] * DA2Cc;
+                attributed_scores_value_creation_faculties_cois['AS_DA2D'] = values['DA2D'] * DA2Dc;
+                attributed_scores_value_creation_faculties_cois['AS_DA2E'] = values['DA2E'] * DA2Ec;
+
+                // Fill attributed_scores_diversify_revenue
+                attributed_scores_diversify_revenue['AS_DB2A'] = values['DB2A'] * DB1c;
+                attributed_scores_diversify_revenue['AS_DB2B'] = values['DB2B'] * DB2c;
+                attributed_scores_diversify_revenue['AS_DB2C'] = values['DB2B'] * DB3c;
+                attributed_scores_diversify_revenue['AS_DB2D'] = values['DB2D'] * DB4c;
+
+                // Fill attributed_scores_systems_leadership
+                attributed_scores_systems_leadership['AS_C1'] = values['DC1'] * DC1c;
+                attributed_scores_systems_leadership['AS_C2'] = values['DC2'] * DC2c;
+
+                // Fill attributed_scores
+                attributed_scores['Value creation for students'] = attributed_scores_value_creation_students;
+                attributed_scores['Value creation for faculties and COIS'] = attributed_scores_value_creation_faculties_cois;
+                attributed_scores['Diversify revenue'] = attributed_scores_diversify_revenue;
+                attributed_scores['Systems leadership'] = attributed_scores_systems_leadership;
+
+
+                var d = attributed_scores;
+                var sum_attributed_score = {};
+
+                for (var key in d) {
+                    if (Object.prototype.hasOwnProperty.call(d, key)) {
+                        var inner_dict = d[key];
+                        var inner_sum = 0;
+                        // Calculate the sum of values for each inner dictionary
+                        for (var innerKey in inner_dict) {
+                            if (Object.prototype.hasOwnProperty.call(inner_dict, innerKey)) {
+                                inner_sum += inner_dict[innerKey];
+                            }
+                        }
+
+                        // Assign the sum to the result object
+                        sum_attributed_score[key] = inner_sum;
+                    }
+                }
+
+                var total_attributed_score = 0;
+                var d = sum_attributed_score;
+                for (var key in d) {
+                    if (Object.prototype.hasOwnProperty.call(d, key)) {
+                        total_attributed_score += d[key];
+                    }
+                }
+                console.log('Total Attributed Score Demand Side:' , total_attributed_score)
+
+                attributed_scores_supply_side = {}
+                
+                attributed_scores_supply_side['SA1'] = values['SA1'] * SA1c
+                attributed_scores_supply_side['SA2'] = values['SA2'] * SA2c
+                attributed_scores_supply_side['SA3'] = values['SA3'] * SA3c
+                attributed_scores_supply_side['SA4'] = values['SA4'] * SA4c
+                attributed_scores_supply_side['SA5'] = values['SA5'] * SA5c
+                attributed_scores_supply_side['SA6'] = values['SA6'] * SA6c
+                attributed_scores_supply_side['SA7'] = values['SA7'] * SA7c
+                attributed_scores_supply_side['SA8'] = values['SA8'] * SA8c
+                attributed_scores_supply_side['SA9'] = values['SA9'] * SA9c
+                attributed_scores_supply_side['SA10'] = values['SA10'] * SA10c
+                attributed_scores_supply_side['SA11'] = values['SA11'] * SA11c
+                attributed_scores_supply_side['SB1'] = values['SB1'] * SB1c
+                attributed_scores_supply_side['SB2'] = values['SB2'] * SB2c
+                attributed_scores_supply_side['SB3'] = values['SB3'] * SB3c
+
+                var total_attributed_score_s = 0;
+                for (var key in attributed_scores_supply_side) {
+                if (Object.prototype.hasOwnProperty.call(attributed_scores_supply_side, key)) {
+                    total_attributed_score_s += attributed_scores_supply_side[key];
+                }
+                }
+                console.log('Total Attributed Score Supply Side', total_attributed_score_s);
+
+                var E30 = 0.6
+                var M30 = 1 - E30
+                var sf = (E30 * total_attributed_score) + (M30 * total_attributed_score_s)
+                console.log('Likelihood Strategic Fit', sf);
+
+                $('#score').text('Strategic Partnership Score: ' + sf);
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
